@@ -1,69 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Teo BW</title>
 
-    <!-- ! Apply fonts imported from Google Fonts -->
-    <!-- Insert code here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Teo BW</title>
 
-    <!-- ! Internat styes -->
-    <style>
-        /* insert styles here */
-    </style>
-  </head>
+  <!-- ! Apply fonts imported from Google Fonts -->
+  <!-- Documentation: https://developers.google.com/fonts/docs/getting_started -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <body>
-    <!-- ! Start of nav (Main Navigation) -->
-        <!-- Insert HTML syntax here -->
-        <nav>
-            <a href="#landing">Home</a>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
-    <!-- ! End of nav (Main Navigation) -->
+  <!-- ! Internal styes -->
+  <style>
+    /* insert styles here */
+    /* CSS Variables for easy theme adjustments */
+    :root {
+      --primary-color: #1a1a1a;
+      --secondary-color: #6c757d;
+      --accent-color: #4caf50;  /* A touch of green for accents */
+      --light-bg-color: #f8f9fa;
+      --white: #ffffff;
+      --border-radius: 0.5rem;
+      /* Converted from 8px */
+      --transition-speed: 0.3s;
+      /* Optional: Set base font size for easier rem calculations (e.g., 62.5% = 10px) */
+      /* Default 16px. 1rem = 16px */
+      font-size: 100%;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Lato, sans-serif;
+      line-height: 1.6;
+      color: var(--primary-color);
+      background-color: var(--white);
+      scroll-behavior: smooth;
 
-    <!-- ! Start of Landing section -->
-        <!-- Insert HTML syntax here -->
-        <section>
-            <div>
-              <!-- Read placehold.co documentation on rendering placeholder text -->
-              <img
-                src="https://placehold.co/200x200/000000/FFFFFF?text=BW"
-                alt="Profile Picture Placeholder"
-              >
-              <p>Hello, I&apos;m</p>
-              <h1>Teo BW</h1>
-              <p>Jr Fullstack Developer | Mid-career Professional</p>
-              <div>
-                <a href="#contact">Contact Me</a>
-                <a href="#">Download CV</a>
-              </div>
-            </div>
-          </section>
-    <!-- ! End of Landing section -->
+    }
+    
+    .section-padding {
+      padding: 5rem, 1.25rem;
+      max-width: 75rem;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 3.75rem;
+      color: var(--primary-color);
+    }
 
-    <!-- ! Start of About Me section -->
-        <!-- Insert HTML syntax here -->
-    <!-- ! End of About Me section -->
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.9375rem 1.25rem;
+      background-color: var(--white);
+      box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-    <!-- ! Start of Experience section -->
-        <!-- Insert HTML syntax here -->
-    <!-- ! End of Experience section -->
+    nav a {
+      margin: 0 0.9375rem;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      transition: color var(--transition-speed);
+    }
+    
+    nav a:hover {
+      color: var(--accent-color);
+    }
 
-    <!-- ! Start of Projects section -->
-        <!-- Insert HTML syntax here -->
-    <!-- ! End of Projects section -->
 
-    <!-- ! Start of Contact section -->
-        <!-- Insert HTML syntax here -->
-    <!-- ! End of Contact section -->
 
-    <!-- ! Start of Footer -->
-        <!-- Insert HTML syntax here -->
-    <!-- ! End of Footer -->
-  </body>
+    
+    .myshowcase {
+      border: var(--accent-color) 2px solid;
+      margin: 3px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- ! Start of nav (Main Navigation) -->
+  <nav>
+    <a href="#landing">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <!-- ! End of nav (Main Navigation) -->
+
+  <!-- ! Start of Landing section -->
+  <section class="section-padding myshowcase">
+    <div>
+      <!-- Read placehold.co documentation on rendering placeholder text -->
+      <img src="https://placehold.co/200x200/000000/FFFFFF?text=BW" alt="Profile Picture Placeholder">
+      <p>Hello, I&apos;m</p>
+      <h1>Teo BW</h1>
+      <p>Jr Fullstack Developer | Mid-career Professional</p>
+      <div>
+        <a href="#contact">Contact Me</a>
+        <a href="#">Download CV</a>
+      </div>
+    </div>
+  </section>
+  <!-- ! End of Landing section -->
+
+  <!-- ! Start of About Me section -->
+  <section class="section-padding myshowcase">
+    <h2>About Me</h2>
+    <div>
+      <div>
+        <img src="https://placehold.co/600x600/CCCCCC/6c757d?text=My+Portrait" alt="Placeholder image for portrait">
+      </div>
+      <div>
+        <h3>"My Passion? Product Development through Clean Code..."</h3>
+        <p>
+          Determined individual who is theming with excitement about embarking
+          on a career in <b>fullstack development</b>. Having completed the
+          <b>Junior Fullstack Developer Bootcamp</b> through SkillsFuture
+          Career Transition Programme (SCTP), I am proactively seeking
+          opportunites to apply my skills in real-world settings. With 5 years
+          of prior experience in quality assurance in the manufacturing
+          industry, I excel in identifying and resolving complex issues while
+          maintaining meticulous attention to detail, which are highly
+          transferable assets for building robust and reliable solutions.
+        </p>
+
+        <div class="info-card-container">
+          <div class="info-card">
+            <h4>5+ Years</h4>
+            <p>Quality Assurance</p>
+          </div>
+          <div class="info-card">
+            <h4>BSc. Mechanical Engineering</h4>
+            <p>Education</p>
+          </div>
+        </div>
+
+        <p>
+          I believe in writing code that is readable by others. Currently
+          exploring advanced techniques in fullstack dev., best practices and
+          architectural design patterns (e.g., MVC, microservices).
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- ! End of About Me section -->
+
+  <!-- ! Start of Experience section -->
+  <!-- Insert HTML syntax here -->
+  <!-- ! End of Experience section -->
+
+  <!-- ! Start of Projects section -->
+  <!-- Insert HTML syntax here -->
+  <!-- ! End of Projects section -->
+
+  <!-- ! Start of Contact section -->
+  <!-- Insert HTML syntax here -->
+  <!-- ! End of Contact section -->
+
+  <!-- ! Start of Footer -->
+  <!-- Insert HTML syntax here -->
+  <!-- ! End of Footer -->
+</body>
+
 </html>
