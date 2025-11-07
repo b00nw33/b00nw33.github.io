@@ -17,7 +17,8 @@
     :root {
       --primary-color: #1a1a1a;
       --secondary-color: #6c757d;
-      --accent-color: #4caf50;  /* A touch of green for accents */
+      --accent-color: #4caf50;
+      /* A touch of green for accents */
       --light-bg-color: #f8f9fa;
       --white: #ffffff;
       --border-radius: 0.5rem;
@@ -27,13 +28,13 @@
       /* Default 16px. 1rem = 16px */
       font-size: 100%;
     }
-    
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    
+
     body {
       font-family: Lato, sans-serif;
       line-height: 1.6;
@@ -41,14 +42,18 @@
       background-color: var(--white);
       scroll-behavior: smooth;
 
+      /* Atempt to fix zooming problem */
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
     }
-    
+
     .section-padding {
       padding: 5rem, 1.25rem;
       max-width: 75rem;
       margin: 0 auto;
     }
-    
+
     h2 {
       font-size: 2.5rem;
       text-align: center;
@@ -75,15 +80,86 @@
       font-weight: 600;
       transition: color var(--transition-speed);
     }
-    
+
     nav a:hover {
       color: var(--accent-color);
+    }
+
+    #landing {
+      min-height: 80dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: var(--light-bg-color);
+      border-radius: 0 0 2rem 2rem;
+    }
+
+    .landing-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 1.25rem;
+    }
+
+    .profile-pic-large {
+      width: 9.375rem;
+      height: 9.375rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 0.25rem solid var(--primary-color);
+      margin-bottom: 0.625rem;
+    }
+
+    .landing-content h1 {
+      font-size: 3.75rem;
+      font-weight: 700;
+    }
+
+    .landing-content p {
+      font-size: 1.2rem;
+      color: var(--secondary-color);
+      margin-bottom: 1.25rem;
+    }
+
+    .cta-group a {
+      display: inline-block;
+      padding: 0.625rem 1.5625rem;
+      margin: 0 0.625rem;
+      text-decoration: none;
+      border-radius: var(--border-radius);
+      font-weight: 600;
+      transition: all var(--transition-speed);
+      border: 0.125rem solid var(--primary-color);
+    }
+
+    .primary-cta {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    .primary-cta:hover {
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
+      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+
+    .secondary-cta {
+      background-color: var(--white);
+      color: var(--primary-color);
+    }
+
+    .secondary-cta:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
     }
 
 
 
     
-    .myshowcase {
+
+    .myhighlight {
       border: var(--accent-color) 2px solid;
       margin: 3px;
     }
@@ -103,23 +179,24 @@
   <!-- ! End of nav (Main Navigation) -->
 
   <!-- ! Start of Landing section -->
-  <section class="section-padding myshowcase">
-    <div>
+  <section id="landing" class="section-padding myhighlight">
+    <div class="landing-content">
       <!-- Read placehold.co documentation on rendering placeholder text -->
-      <img src="https://placehold.co/200x200/000000/FFFFFF?text=BW" alt="Profile Picture Placeholder">
+      <img src="https://placehold.co/200x200/000000/FFFFFF?text=BW" alt="Profile Picture Placeholder"
+        class="profile-pic-large">
       <p>Hello, I&apos;m</p>
       <h1>Teo BW</h1>
       <p>Jr Fullstack Developer | Mid-career Professional</p>
-      <div>
-        <a href="#contact">Contact Me</a>
-        <a href="#">Download CV</a>
+      <div class="cta-group">
+        <a href="#contact" class="primary-cta">Contact Me</a>
+        <a href="#" class="secondary-cta">Download CV</a>
       </div>
     </div>
   </section>
   <!-- ! End of Landing section -->
 
   <!-- ! Start of About Me section -->
-  <section class="section-padding myshowcase">
+  <section class="section-padding myhighlight">
     <h2>About Me</h2>
     <div>
       <div>
