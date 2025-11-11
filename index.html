@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Teo BW</title>
+  <title>Portfolio | Boon Wee</title>
 
   <!-- ! Apply fonts imported from Google Fonts -->
   <!-- Documentation: https://developers.google.com/fonts/docs/getting_started -->
@@ -33,6 +33,8 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+
+      border: var(--accent-color) 1px dotted;
     }
 
     body {
@@ -41,17 +43,14 @@
       color: var(--primary-color);
       background-color: var(--white);
       scroll-behavior: smooth;
-
-      /* Atempt to fix zooming problem */
-      /* display: flex;
-      flex-direction: column;
-      align-items: center; */
     }
 
     .section-padding {
       padding: 5rem, 1.25rem;
       max-width: 75rem;
       margin: 0 auto;
+
+      padding: .75rem;
     }
 
     h2 {
@@ -85,6 +84,7 @@
       color: var(--accent-color);
     }
 
+    /* --- 1. LANDING SECTION --- */
     #landing {
       min-height: 80dvh;
       display: flex;
@@ -155,15 +155,284 @@
       color: var(--white);
     }
 
-
-
-    
-
-    .myhighlight {
-      border: var(--accent-color) 2px solid;
-      margin: 3px;
+    /* --- 2. ABOUT ME SECTION --- */
+    #about {
+      background-color: var(--white);
     }
 
+    .about-grid {
+      display: flex;
+      gap: 2.5rem;
+      /* Converted from 40px */
+      align-items: flex-start;
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 18.75rem;
+      /* Converted from 300px */
+      border-radius: var(--border-radius);
+    }
+
+    .about-text {
+      flex: 2;
+
+      padding: 1rem;
+    }
+
+    .about-text h3 {
+      font-size: 1.8rem;
+      /* Converted from 1.8em */
+      font-weight: lighter;
+      font-style: italic;
+      margin-bottom: 0.9375rem;
+      /* Converted from 15px */
+    }
+
+    .info-card-container {
+      display: flex;
+      gap: 1.25rem;
+      /* Converted from 20px */
+      margin: 1.5625rem 0;
+      /* Converted from 25px 0 */
+    }
+
+    .info-card {
+      flex: 1;
+      padding: 1.25rem;
+      /* Converted from 20px */
+      border: 0.0625rem solid #ddd;
+      /* Converted from 1px */
+      border-radius: var(--border-radius);
+      text-align: center;
+      background-color: var(--light-bg-color);
+      box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.05);
+      /* Converted from 0 2px 5px */
+    }
+
+    .info-card h4 {
+      font-size: 1.2rem;
+      /* Converted from 1.2em */
+      color: var(--accent-color);
+      margin-bottom: 0.3125rem;
+      /* Converted from 5px */
+    }
+
+    /* --- 3. EXPERIENCE SECTION --- */
+    #experience {
+      background-color: var(--light-bg-color);
+    }
+
+    .experience-container {
+      display: flex;
+      gap: 2.5rem;
+      /* Converted from 40px */
+      justify-content: center;
+    }
+
+    .experience-card {
+      flex: 1;
+      min-width: 18.75rem;
+      /* Converted from 300px */
+      padding: 1.875rem;
+      /* Converted from 30px */
+      background-color: var(--white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.05);
+      /* Converted from 0 4px 10px */
+      text-align: center;
+    }
+
+    .experience-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 1.5625rem;
+      /* Converted from 25px */
+      border-bottom: 0.125rem solid var(--accent-color);
+      /* Converted from 2px */
+      padding-bottom: 0.625rem;
+      /* Converted from 10px */
+      display: inline-block;
+    }
+
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      text-align: left;
+      margin-top: 0.9375rem;
+      /* Converted from 15px */
+    }
+
+    .skill-list li {
+      width: calc(50% - 0.625rem);
+      /* Converted from 10px */
+      margin-bottom: 0.9375rem;
+      /* Converted from 15px */
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+    }
+
+    .skill-list li::before {
+      content: "•";
+      color: var(--accent-color);
+      font-size: 1.2rem;
+      /* Converted from 1.2em */
+      margin-right: 0.625rem;
+      /* Converted from 10px */
+    }
+
+    /* --- 4. PROJECTS SECTION --- */
+
+
+
+
+
+    /* --- 5. CONTACT ME SECTION --- */
+    #contact {
+      text-align: center;
+      background-color: var(--light-bg-color);
+    }
+
+    #contact p {
+      font-size: 1.2rem;
+      /* Converted from 1.2em */
+      margin-bottom: 1.875rem;
+      /* Converted from 30px */
+      color: var(--secondary-color);
+    }
+
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1.5625rem;
+      /* Converted from 12px 25px */
+      margin: 0 0.9375rem;
+      /* Converted from 15px */
+      border: 0.125rem solid var(--primary-color);
+      /* Converted from 2px */
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      transition: all var(--transition-speed);
+    }
+
+    .contact-links a:hover {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    .contact-links a span {
+      margin-right: 0.625rem;
+      /* Converted from 10px */
+      font-size: 1.2rem;
+      /* Converted from 1.2em */
+    }
+
+    /* --- 6. FOOTER --- */
+    footer {
+      text-align: center;
+      padding: 1.25rem;
+      /* Converted from 20px */
+      border-top: 0.0625rem solid #eee;
+      /* Converted from 1px */
+      background-color: var(--white);
+    }
+
+    .footer-nav a {
+      margin: 0 0.625rem;
+      /* Converted from 10px */
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+
+    .footer-nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .copyright {
+      margin-top: 0.625rem;
+      /* Converted from 10px */
+      font-size: 0.8rem;
+      /* Converted from 0.8em */
+      color: var(--secondary-color);
+    }
+
+    @media (max-width: 56.25rem) {
+      /* Converted from 900px */
+
+      h2 {
+        font-size: 2rem;
+        /* Converted from 2em */
+      }
+
+      .about-grid {
+        flex-direction: column;
+      }
+
+      .about-image {
+        margin: 0 auto;
+      }
+
+      .about-text {
+        text-align: center;
+        /* Converted from 30px */
+      }
+
+      .info-card-container {
+        flex-direction: column;
+      }
+
+      .experience-container {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 37.5rem) {
+
+      /* Converted from 600px */
+      .section-padding {
+        padding: 3.125rem 0.9375rem;
+        /* Converted from 50px 15px */
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      .about-grid {
+        flex-direction: column;
+      }
+
+      /* .about-image {
+        margin: 0 auto;
+      } */
+
+      .cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.625rem;
+      }
+
+      .cta-group a {
+        margin: 0;
+        width: 100%;
+      }
+
+      .contact-links a {
+        margin: 0.3125rem;
+        /* Converted from 5px */
+      }
+
+
+    }
   </style>
 </head>
 
@@ -179,13 +448,13 @@
   <!-- ! End of nav (Main Navigation) -->
 
   <!-- ! Start of Landing section -->
-  <section id="landing" class="section-padding myhighlight">
+  <section id="landing" class="section-padding">
     <div class="landing-content">
       <!-- Read placehold.co documentation on rendering placeholder text -->
       <img src="https://placehold.co/200x200/000000/FFFFFF?text=BW" alt="Profile Picture Placeholder"
         class="profile-pic-large">
       <p>Hello, I&apos;m</p>
-      <h1>Teo BW</h1>
+      <h1>Boon Wee</h1>
       <p>Jr Fullstack Developer | Mid-career Professional</p>
       <div class="cta-group">
         <a href="#contact" class="primary-cta">Contact Me</a>
@@ -196,21 +465,22 @@
   <!-- ! End of Landing section -->
 
   <!-- ! Start of About Me section -->
-  <section class="section-padding myhighlight">
+  <section id="about" class="section-padding">
     <h2>About Me</h2>
-    <div>
-      <div>
-        <img src="https://placehold.co/600x600/CCCCCC/6c757d?text=My+Portrait" alt="Placeholder image for portrait">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="https://placehold.co/600x600/CCCCCC/6c757d?text=My+Portrait" alt="Placeholder image for portrait"
+          width="300" height="300">
       </div>
-      <div>
+      <div class="about-text">
         <h3>"My Passion? Product Development through Clean Code..."</h3>
         <p>
           Determined individual who is theming with excitement about embarking
           on a career in <b>fullstack development</b>. Having completed the
           <b>Junior Fullstack Developer Bootcamp</b> through SkillsFuture
           Career Transition Programme (SCTP), I am proactively seeking
-          opportunites to apply my skills in real-world settings. With 5 years
-          of prior experience in quality assurance in the manufacturing
+          opportunites to apply my skills in real-world settings. With over 15 years
+          of prior experience in teaching and the edtech
           industry, I excel in identifying and resolving complex issues while
           maintaining meticulous attention to detail, which are highly
           transferable assets for building robust and reliable solutions.
@@ -218,11 +488,11 @@
 
         <div class="info-card-container">
           <div class="info-card">
-            <h4>5+ Years</h4>
-            <p>Quality Assurance</p>
+            <h4>15+ Years</h4>
+            <p>Educator/ Edtech</p>
           </div>
           <div class="info-card">
-            <h4>BSc. Mechanical Engineering</h4>
+            <h4>BSc. Chemical Engineering</h4>
             <p>Education</p>
           </div>
         </div>
@@ -238,7 +508,33 @@
   <!-- ! End of About Me section -->
 
   <!-- ! Start of Experience section -->
-  <!-- Insert HTML syntax here -->
+  <section id="experience" class="section-padding">
+    <h2>Skills</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>Tech Stack</h3>
+        <ul class="skill-list">
+          <li>HTML5 & Semantic Markup</li>
+          <li>CSS3 (and Bootstrap)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React</li>
+          <li>Java</li>
+          <li>Springboot (Maven)</li>
+        </ul>
+      </div>
+      <div class="experience-card">
+        <h3>Tools & Concepts</h3>
+        <ul class="skill-list">
+          <li>Version Control (Git, Github)</li>
+          <li>Client-Server Artchitecture</li>
+          <li>API Development (Postman)</li>
+          <li>Unit Testing (Jest/jUnit)</li>
+          <li>Visual Studio Code</li>
+          <li>IntelliJ IDEA</li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <!-- ! End of Experience section -->
 
   <!-- ! Start of Projects section -->
@@ -246,11 +542,28 @@
   <!-- ! End of Projects section -->
 
   <!-- ! Start of Contact section -->
-  <!-- Insert HTML syntax here -->
+  <section id="contact" class="section-padding">
+    <h2>Contact Me</h2>
+    <p>Let's connect!</p>
+    <div class="contact-links">
+      <a href="mailto:john.doe@example.com"> <span>📧</span> Email Me </a>
+      <a href="https://linkedin.com/in/johndoe">
+        <span>🔗</span> LinkedIn Profile
+      </a>
+    </div>
+  </section>
   <!-- ! End of Contact section -->
 
   <!-- ! Start of Footer -->
-  <!-- Insert HTML syntax here -->
+  <footer>
+    <div class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="copyright">&copy; 2025 John Doe. All rights reserved.</p>
+  </footer>
   <!-- ! End of Footer -->
 </body>
 
