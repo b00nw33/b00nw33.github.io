@@ -3,9 +3,9 @@
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #6c757d;
-    --accent-color: #4caf50;
-    /* A touch of green for accents */
-    --light-bg-color: #f8f9fa;
+    --accent-color: #66a5fd;
+    /* A touch of blue for accents */
+    --light-bg-color: #eff7ff;
     --white: #ffffff;
     --border-radius: 0.5rem;
     /* Converted from 8px */
