@@ -68,7 +68,7 @@ export const EXPERIENCE_DATA: Experience[] = [
   },
   {
     id: 4,
-    role: "Full-fledged Science Teacher",
+    role: "Chemistry Teacher",
     company: "Ministry of Education",
     period: "Jul '08 - Aug '14",
     description: "Built Excel-based applications for academic performance analysis, improving accuracy of reporting and reducing processing time by 40%. Developed digital tools for data validation and performance tracking across cohorts.",
