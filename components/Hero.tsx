@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               View My Work <ArrowRight className="h-5 w-5" />
             </a>
             <a 
-              href="public/FSD07_TeoBoonWee.pdf" 
+              href="FSD07_TeoBoonWee.pdf" 
               className="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
             >
               Download Resume <Download className="h-5 w-5" />
