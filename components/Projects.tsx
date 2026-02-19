@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
             // CHANGE 1: Changed div to a, added href, target, rel, and 'block' class
             <a
               key={project.id}
-              href={project.demoUrl || project.repoUrl}
+              href={project.repoUrl || project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-slate-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-2 transition-all duration-300 shadow-xl group"
