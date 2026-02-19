@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Let's Connect</h2>
             <p className="text-xl text-slate-600 mb-8">
-              I'm currently looking for full-time opportunities in frontend or full-stack development. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              I'm currently looking for full-time opportunities in backend or full-stack development. Whether you have a question or just want to say hi, I'll try my best to get back to you!
             </p>
             
             <div className="space-y-6">

@@ -107,7 +107,7 @@ export const PROJECTS_DATA: Project[] = [
     id: 3,
     title: "Colmar Academy",
     description: "Designing and implementing a responsive, single-page landing page for a fictional school. It tests skills in layout, typography, and responsive design.",
-    technologies: ["Vue.js", "Firebase", "Socket.io"],
+    technologies: ["HTML", "CSS"],
     imageUrl: "https://picsum.photos/600/400?random=3",
     demoUrl: "#",
     repoUrl: "https://github.com/b00nw33/fsd-colmar-academy"
