@@ -13,8 +13,8 @@ import {
 import { Project, Experience, SkillCategory, SocialLink } from './types';
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: 'GitHub', url: '#', icon: Github },
-  { platform: 'LinkedIn', url: '#', icon: Linkedin },
+  { platform: 'GitHub', url: 'https://github.com/b00nw33', icon: Github },
+  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/bwteo/', icon: Linkedin },
   { platform: 'Email', url: 'mailto:gyrowcode@gmail.com', icon: Mail },
 ];
 
